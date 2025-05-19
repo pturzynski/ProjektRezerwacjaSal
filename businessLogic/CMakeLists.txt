@@ -13,8 +13,13 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_library(businessLogic SHARED
   businessLogic_global.h
-  roommenager.cpp
-  roommenager.h
+  systemrezerwacji.cpp
+  systemrezerwacji.h
+  sala.h sala.cpp
+  salawykladowa.h salawykladowa.cpp
+  rezerwacja.h rezerwacja.cpp
+  salalaboratoryjna.h salalaboratoryjna.cpp
+  salakomputerowa.h salakomputerowa.cpp
 )
 
 target_link_libraries(businessLogic PRIVATE Qt${QT_VERSION_MAJOR}::Core)
